@@ -63,8 +63,6 @@ public:
         LeaveCriticalSection(&blocksLock);
 
         // Add to heap tracking
-        EnterCriticalSection(&heaps[heapIndex].critSection);
-        block->next = heaps[heapIndex].allocations;
         heaps[heapIndex].allocations = block;
         heaps[heapIndex].totalAllocations++;
         LeaveCriticalSection(&heaps[heapIndex].critSection);
