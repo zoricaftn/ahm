@@ -99,37 +99,6 @@ public:
         size_t heapIndex = block->heapIndex;
 
         // Remove from heap's allocation list
-        EnterCriticalSection(&heaps[heapIndex].critSection);
-        curr = &heaps[heapIndex].allocations;
-        while (*curr) {
-            if ((*curr)->ptr == ptr) {
-                *curr = (*curr)->next;
-                heaps[heapIndex].totalAllocations--;
-                break;
-            }
-            curr = &(*curr)->next;
-        }
-        LeaveCriticalSection(&heaps[heapIndex].critSection);
-
-        // Free the actual memory
-        free(ptr);
-        delete block;
-
-        LeaveCriticalSection(&blocksLock);
-    }
-
-    // Show summary
-    void PrintStats() {
-        cout << "\n------------------------------------\n";
-        cout << "|      HEAP\t|     Allocations  |";
-        cout << "\n------------------------------------\n";
-
-        for (size_t i = 0; i < numHeaps; i++) {
-            EnterCriticalSection(&heaps[i].critSection);
-            cout << "|        " << i << "\t|         " << setw(2) << setfill('0') << heaps[i].totalAllocations << "       |\n";
-            cout << "------------------------------------\n";
-            LeaveCriticalSection(&heaps[i].critSection);
-        }
-    }
+        EnterCritic
 };
 #endif // ADVANCED_HEAP_MANAGER_HPP
