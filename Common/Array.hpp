@@ -25,6 +25,8 @@ public:
         if (length >= capacity) {
             size_t newCapacity = capacity * 2;
             T* newData = new T[newCapacity];
+            for (size_t i = 0; i < length; i++) {
+                newData[i] = data[i];
             }
             delete[] data;
             data = newData;
