@@ -38,7 +38,29 @@ void RunStressTests() {
         ahm.PrintStats();
     }
 
-   
+    // Test 2: Mixed Size Operations
+    {
+        AdvancedHeapManager ahm(20);
+        HANDLE threads[NUM_THREADS] = { NULL };
+
+        // Create threads
+        for (int i = 0; i < NUM_THREADS; i++) {
+            ThreadData* data = new ThreadData{ &ahm, i + 30 };
+            threads[i] = CreateThread(nullptr, 0, ThreadFunction, data, 0, nullptr);
+        }
+
+        // Wait for all threads to complete
+        WaitForMultipleObjects(NUM_THREADS, threads, TRUE, INFINITE);
+
+        // Close thread handles
+        for (int i = 0; i < NUM_THREADS; i++) {
+            if (threads[i] != NULL)
+                CloseHandle(threads[i]);
+        }
+
+        // Print final statistics
+        ahm.PrintStats();
+    }
 }
 
 #endif // !STRESS_TESTS_HPP
