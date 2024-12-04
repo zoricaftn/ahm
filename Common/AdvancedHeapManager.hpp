@@ -4,7 +4,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <Windows.h>
-#include <iomanip> 
+#include <iomanip>
 #include "Heap.hpp"
 #include "MemoryBlock.hpp"
 #include "Array.hpp"
@@ -21,7 +21,7 @@ private:
     // Memory tracking
     MemoryBlock* allBlocks;      // Global list of all allocations
     CRITICAL_SECTION blocksLock; // Lock for allBlocks access
-    Array<void*> mem_ptrs;       // Wayback pointers to heap memory segmens (only if needed)
+    Array<void*> mem_ptrs;       // Wayback pointers to heap memory segments (only if needed)
 
 public:
     explicit AdvancedHeapManager(size_t heapCount = 4) : numHeaps(heapCount), currentHeap(0), allBlocks(nullptr) {

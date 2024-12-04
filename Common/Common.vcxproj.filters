@@ -23,7 +23,9 @@
     <ClCompile Include="Array.hpp">
       <Filter>Header Files</Filter>
     </ClCompile>
-    <ClCompile Include="StressTests.hpp" />
+    <ClCompile Include="StressTests.hpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AdvancedHeapManager.hpp">
