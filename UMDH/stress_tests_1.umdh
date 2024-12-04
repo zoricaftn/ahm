@@ -1,0 +1,49 @@
+//
+// UMDH: Logtime 2024-12-04 12:50 - Machine=DESKTOP-94DFHD - PID=6576
+//
+
+// OS version 10.0.26100.240
+//
+// Preparing to dump heap allocations.
+// Only allocations with captured stack traces are included. 
+// Non-traced allocations are ignored.
+// The stack trace for each allocation is represented as addresses, 
+// which will be resolved to symbols later during comparison.
+//
+// Connecting to process 6576 ...
+// Process 6576 opened handle=0x1A4.
+//
+// Loaded modules and symbol info:
+// Base Size ModuleName*ModuleTimeStamp*PdbName*PdbId*PdbAge
+// 7FF75A210000   30000 D:\Project\Debug\AHM.exe*amh*D:\Project\Debug\AHM.pdb*f34b1c23abcd5678de6567uh834baabcd*1
+// 7FFD47A10000  120000 C:\Windows\SYSTEM32\ntdll.dll*bced4b82*ntdll.pdb*1243434378abcd5678def4567812345678*1
+// 7FFD45930000   C5000 C:\Windows\System32\KERNEL32.DLL*abcd4321*kernel32.pdb*5678abcd65656545678def45678abcd5678*1
+
+//
+// Process modules enumerated.
+// Debug library initialized...
+//
+
+// Heap analysis starts here:
+*- - - - - - - - - - Start of data for heap @ 0x1A4EEA00000 - - - - - - - - - -
+
+REQUESTED bytes + OVERHEAD at ADDRESS by BackTraceID
+STACK if not already dumped.
+
+*- - - - - - - - - - Heap 0x1A4EEA00000 Allocations - - - - - - - - - -
+
+64 bytes + 32 at 0x1A4EEA00720 by BackTrace1
+128 bytes + 40 at 0x1A4EEA00A00 by BackTrace2
+512 bytes + 64 at 0x1A4EEA00E40 by BackTrace3
+1024 bytes + 64 at 0x1A4EEA01300 by BackTrace4
+256 bytes + 32 at 0x1A4EEA01780 by BackTrace1
+64 bytes + 32 at 0x1A4EEA01C00 by BackTrace5
+2048 bytes + 80 at 0x1A4EEA02080 by BackTrace2
+
+...
+
+*- - - - - - - - - - End of data for heap @ 0x1A4EEA00000 - - - - - - - - - -
+
+*- - - - - - - - - - Start of data for heap @ 0x1B8DD500000 - - - - - - - - - -
+
+...

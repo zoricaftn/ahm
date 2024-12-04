@@ -1,0 +1,75 @@
+// 
+// UMDH: Logtime 2023-12-15 22:08 - Machine=DESKTOP-OOA26T0 - PID=2148
+// 
+
+// OS version 10.0 
+// 
+// Preparing to dump heap allocations.
+// Only allocations for which the heap manager collected a stack are dumped. Allocations without stacks are ignored.
+// The stack trace for an allocation is dumped as a list of addresses. They will be resolved to function names at compare time.
+// 
+// Connecting to process 2148 ...
+// Process 2148 opened handle=288.
+// 
+// Loaded modules and symbol info: 
+//    Base Size ModuleName*ModuleTimeStamp*PdbName*PdbId*PdbAge
+//        7FF7F9E20000    2E000 C:\Projects\AHM\x64\Debug\AHM.exe*657cb9d4*AHM.pdb*3df9ef5ee3cd43439e833e184daade1d*7
+//        7FFD39230000   217000 C:\Windows\SYSTEM32\ntdll.dll*bced4b82*ntdll.pdb*58a282c24aee7e03a8cf8cb0a782ce0c*1
+//        7FFD37B20000    C4000 C:\Windows\System32\KERNEL32.DLL*2e35230e*kernel32.pdb*6f7660385e7d8d33ed9b5a39b03822f0*1
+//        7FFD36990000   3A6000 C:\Windows\System32\KERNELBASE.dll*3091b6fb*kernelbase.pdb*f4b4fff5878cad6b2d379d9403c5e78d*1
+//        7FFD38970000    71000 C:\Windows\System32\WS2_32.dll*e911ea68*ws2_32.pdb*4fd99d5b8cef7e09c754ff8f32ad9a15*1
+//        7FFD39060000   117000 C:\Windows\System32\RPCRT4.dll*5d4e6a2f*rpcrt4.pdb*e9340f662d4fe1866766900e90ddf30e*1
+//        7FFCA7330000    2E000 C:\Windows\SYSTEM32\VCRUNTIME140D.dll*7ce75efb*vcruntime140d.amd64.pdb*2536f95cf96f69392ed65f01da60e611*1
+//        7FFC8BD60000   221000 C:\Windows\SYSTEM32\ucrtbased.dll*9501acb0*ucrtbased.pdb*953f541fca8ceb29d8358f870a3be899*2
+// 
+// Loaded modules: 
+//    Base Size Module
+//        7FF7F9E20000    2E000 C:\Projects\AHM\x64\Debug\AHM.exe
+//        7FFD39230000   217000 C:\Windows\SYSTEM32\ntdll.dll
+//        7FFD37B20000    C4000 C:\Windows\System32\KERNEL32.DLL
+//        7FFD36990000   3A6000 C:\Windows\System32\KERNELBASE.dll
+//        7FFD38970000    71000 C:\Windows\System32\WS2_32.dll
+//        7FFD39060000   117000 C:\Windows\System32\RPCRT4.dll
+//        7FFCA7330000    2E000 C:\Windows\SYSTEM32\VCRUNTIME140D.dll
+//        7FFC8BD60000   221000 C:\Windows\SYSTEM32\ucrtbased.dll
+// 
+// Process modules enumerated.
+// Debug library initialized ...
+7FFD39230000-7FFD39446FFF DBGHELP: ntdll - public symbols  
+        c:\symbols\ntdll.pdb\58A282C24AEE7E03A8CF8CB0A782CE0C1\ntdll.pdb
+
+*- - - - - - - - - - Start of data for heap @ 0x2BA74DB0000 - - - - - - - - - -
+
+REQUESTED bytes + OVERHEAD at ADDRESS by BackTraceID
+     STACK if not already dumped.
+
+*- - - - - - - - - - Heap 0x2BA74DB0000 Hogs - - - - - - - - - -
+
+10 bytes + 10 at 0x2BA74DB0750 by BackTrace0
+20 bytes + 10 at 0x2BA74DB07A0 by BackTrace0
+100 bytes + 10 at 0x2BA74DB0860 by BackTrace0
+200 bytes + 10 at 0x2BA74DB2F60 by BackTrace0
+1D8 bytes + 8 at 0x2BA74DB0A70 by BackTrace0
+3C bytes + 14 at 0x2BA74DB2E50 by BackTrace0
+5F bytes + 11 at 0x2BA74DBE8A0 by BackTrace0
+400 bytes + 10 at 0x2BA74DB8860 by BackTrace0
+780 bytes + 10 at 0x2BA74DB7480 by BackTrace0
+1034 bytes + C at 0x2BA74DBFE60 by BackTrace0
+1234 bytes + C at 0x2BA74DBCC00 by BackTrace0
+5A bytes + 16 at 0x2BA74DC1650 by BackTrace0
+
+*- - - - - - - - - - End of data for heap @ 0x2BA74DB0000 - - - - - - - - - -
+
+*- - - - - - - - - - Start of data for heap @ 0x2BA74B70000 - - - - - - - - - -
+
+REQUESTED bytes + OVERHEAD at ADDRESS by BackTraceID
+     STACK if not already dumped.
+
+*- - - - - - - - - - Heap 0x2BA74B70000 Hogs - - - - - - - - - -
+
+40 bytes + 10 at 0x2BA74B70150 by BackTrace1
+120 bytes + 12 at 0x2BA74B70400 by BackTrace1
+500 bytes + 14 at 0x2BA74B70790 by BackTrace1
+900 bytes + 20 at 0x2BA74B70F00 by BackTrace1
+
+*- - - - - - - - - - End of data for heap @ 0x2BA74B70000 - - - - - - - - - -
